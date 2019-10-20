@@ -3,51 +3,76 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Portfolio | Charlette Wagner</title>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+
+  <!-- this is the navigation bar which replaced the header -->
+  <div class="container"  id="masthead">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand mb-1 h1" href="index.html" id="logo" >Charlette Wagner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>      
       </nav>
-    </div>
-  </header>
+    </div> <!--end of nav bar-->
 
   <div id="main-container" class="container">
     <section class="main-section">
       <h1>Portfolio</h1>
 
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
+      <div class="card-columns">     
 
-        <h3>Word Guess</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
+        <div class="card text-center text-white bg-info mb-3 " style="max-width: 18rem;">
+            <img class="card-img-top" src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">          
+            <div class="card-title">
+              <h3>Word Guess</h3>
+            </div>
+        </div>
+        <div class="card text-center text-white bg-info mb-3 " style="max-width: 18rem;">
+            <img class="card-img-top" src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">          
+            <div class="card-title">
+              <h3>RPG Game</h3>
+            </div>
+        </div>
+        <div class="card text-center text-white bg-info mb-3 " style="max-width: 18rem;">
+            <img class="card-img-top" src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">          
+            <div class="card-title">
+              <h3>Trivia Game</h3>
+            </div>
+        </div>
+        <div class="card text-center text-white bg-info mb-3 " style="max-width: 18rem;">
+            <img class="card-img-top" src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">          
+            <div class="card-title">
+              <h3>Rutgers Info Widget</h3>
+            </div>
+        </div>
+        <div class="card text-center text-white bg-info mb-3 " style="max-width: 18rem;">
+            <img class="card-img-top" src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Sissors">          
+            <div class="card-title">
+              <h3>Rock Paper Sissors</h3>
+            </div>
+        </div>
+    
       </div>
 
     </section>
@@ -59,6 +84,12 @@
       Copyright &copy;
     </div>
   </footer>
+  
+  <!-- Added to allow for bootstrap  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
